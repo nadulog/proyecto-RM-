@@ -38,12 +38,18 @@ li {
 
 a {
     text-decoration: none;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     font-size: 25px;
     color: #545454;
+    padding: 10px 15px;
+    background-color: lightpink;
+    border-radius: 30px;
+    font-family: 'Cormorant Garamond', serif;    
+}
 
-    font-family: 'Cormorant Garamond', serif;
-    
+a:hover{
+    background-color: #E96583;
+    color: lightgoldenrodyellow;
 }
 
 body{
