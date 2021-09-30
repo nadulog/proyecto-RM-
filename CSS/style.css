@@ -21,7 +21,7 @@
     color: #545454;
     font-size: 25px;
 }
-
+/*
 ul {
     list-style: none;
 
@@ -39,12 +39,10 @@ li {
 
 a {
     text-decoration: none;
-    /*padding-bottom: 30px;*/
+    /*padding-bottom: 30px;
     font-size: 25px;
-<<<<<<< HEAD
     color: #ffffff;
     font-family: 'Cormorant Garamond', serif;
-=======
     color: #545454;
     padding: 10px 15px;
     background-color: lightpink;
@@ -55,8 +53,7 @@ a {
 a:hover{
     background-color: #E96583;
     color: lightgoldenrodyellow;
->>>>>>> 2143bcf5b4911d01fccf66456965080f654fbabf
-}
+}*/
 
 
 body{
@@ -101,14 +98,19 @@ button{
     outline: 3px solid  #545454;
     outline-offset: 3px;
     border: none;
+    border-radius: 30px;
     background:pink;
     color:#545454;
+    font-weight: bold;
+    font-size: 15px;
     width: 150px;
     padding: 1em;
     box-shadow: 5px 5px 5px 5px #545454;
 }
 button:hover{
     background: #ffffff48;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
 }
 
 
