@@ -6,7 +6,6 @@
     margin-bottom: 90%;
     margin-left: 150px;
     margin-top: 50px;
-    
 }
 
 .contenedor-texto{
@@ -15,15 +14,16 @@
 }
 
 .texto{
-    text-align: center;
+    text-align:start;
     padding: 20px;
     font-family: 'Cormorant Garamond', serif;
     color: #545454;
+    font-size: 25px;
 }
 
 ul {
     list-style: none;
- 
+
 }
 
 ul,
@@ -32,16 +32,16 @@ li {
     list-style: none;
     text-align: center;
     padding: 15px 10px;
-    /*word-spacing: 8px;*/
+    word-spacing: 8px;
 }
 
 
 a {
     text-decoration: none;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
     color: #545454;
-   
+
     font-family: 'Cormorant Garamond', serif;
     
 }
