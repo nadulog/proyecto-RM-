@@ -11,6 +11,7 @@
 .contenedor-texto{
     display: flex;
     position: relative;
+    flex-direction: column;
 }
 
 .texto{
@@ -40,11 +41,10 @@ a {
     text-decoration: none;
     padding-bottom: 30px;
     font-size: 25px;
-    color: #545454;
-
+    color: #ffffff;
     font-family: 'Cormorant Garamond', serif;
-    
 }
+
 
 body{
     margin: 0;
@@ -83,6 +83,19 @@ main{
     color:white;
     position: relative;
     
+}
+button{
+    outline: 3px solid  #545454;
+    outline-offset: 3px;
+    border: none;
+    background:pink;
+    color:#545454;
+    width: 150px;
+    padding: 1em;
+    box-shadow: 5px 5px 5px 5px #545454;
+}
+button:hover{
+    background: #ffffff48;
 }
 
 
