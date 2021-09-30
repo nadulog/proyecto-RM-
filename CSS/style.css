@@ -1,10 +1,31 @@
-nav{
+.navegacion{
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    margin-bottom: 90%;
+    margin-left: 150px;
+    margin-top: 50px;
+    
 }
+
+.contenedor-texto{
+    display: flex;
+    position: relative;
+}
+
+.texto{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #545454;
+}
+
 ul {
     list-style: none;
+ 
 }
+
 ul,
 li {
     display: inline;
@@ -13,12 +34,16 @@ li {
     padding: 15px 10px;
     /*word-spacing: 8px;*/
 }
+
+
 a {
     text-decoration: none;
     padding-bottom: 30px;
-    font-size: 20px;
-    color: rgb(10, 10, 10);
-    font-size: 20px;
+    font-size: 30px;
+    color: #545454;
+   
+    font-family: 'Cormorant Garamond', serif;
+    
 }
 
 body{
@@ -29,11 +54,13 @@ body{
     display: flex ;
     min-height: 100vh;
 }
+
+
 aside,main{
     width:50%; 
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 aside{
@@ -41,26 +68,41 @@ aside{
     color:white;
     justify-content: flex-end;
 }
+
+img{
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main{
     background: pink ;
     color:white;
+    position: relative;
+    
 }
+
+
+
 
 @media screen and (max-width:500px){
-body{
-    flex-direction: column;
+    body{
+        flex-direction: column;
 
-}
-main, aside{
-    width:100%;
-    height: 50vh;
-    justify-content: center;
-}
-aside{
-    align-items:flex-end ;
-}
+    }
+    main, aside{
+        width:100%;
+        height: 50vh;
+        justify-content: center;
+    }
+    aside{
+        align-items:flex-end ;
+    }
 
-main{
-    align-items: flex-start;
-}
+    main{
+        align-items: flex-start;
+    }
 }
