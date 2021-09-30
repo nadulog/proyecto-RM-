@@ -76,7 +76,7 @@ button:hover{
 /*SITIOOOO WEBBBB*/
 header {
     width: 100%;
-    background: linear-gradient(160deg, #554455 0%, #ffe5fa 50%);
+    background:pink;
     position: fixed;
     display: flex;
     justify-content: flex-end;
