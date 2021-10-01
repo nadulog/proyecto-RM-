@@ -1,28 +1,30 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+.bdy-pag-inicial {
     font-size: 2.5em;
     font-weight: bold;
     display: flex ;
     min-height: 100vh;
-    background: rgba(255, 192, 203, 0.548);
+    width: 100%;
+   /* background: rgba(255, 192, 203, 0.548);*/
 }
 
 
-aside,main{
+.aside, .main{
     width:50%; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-aside{
+.aside{
     background: #545454 ;
     color:white;
     justify-content: flex-end;
+}
+
+.main{
+    background: pink ;
+    color:white;
+    position: relative;
 }
 
 img{
@@ -34,12 +36,6 @@ img{
     justify-content: center;
 }
 
-main{
-    background: pink ;
-    color:white;
-    position: relative;
-    
-}
 button{
     outline: 3px solid  #545454;
     outline-offset: 3px;
@@ -75,10 +71,21 @@ button:hover{
     color: lightgoldenrodyellow;
 }
 /*SITIOOOO WEBBBB*/
+
+/*
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+.bdy-sitio-web{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 header {
     width: 100%;
     background:pink;
-    position: fixed;
     display: flex;
     justify-content: flex-end;
     font-family: 'Montserrat', 'sans serif';
