@@ -4,6 +4,9 @@
     display: flex ;
     min-height: 100vh;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
    /* background: rgba(255, 192, 203, 0.548);*/
 }
 
@@ -23,7 +26,7 @@
 
 .main{
     background: pink ;
-    color:white;
+    color: #545454;
     position: relative;
 }
 
@@ -64,21 +67,17 @@ button:hover{
     padding: 10px 15px;
     background-color: lightpink;
     border-radius: 30px;
-    font-family: 'Cormorant Garamond', serif;    
+        
 }
 .btn :hover{
-    background-color: #E96583;
-    color: lightgoldenrodyellow;
+    background-color: #545454;
+    color: lightyellow;
 }
-/*SITIOOOO WEBBBB*/
 
-/*
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
+/*************************************************************/
+/*------------------SITIO WEB-------------------------------*/
 .bdy-sitio-web{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -95,15 +94,17 @@ header {
 ul {
     list-style: none;
 }
+
 ul,
 li {
-    /*display: inline;*/
+    display: inline;
     margin-right: 90px;
     list-style: none;
     text-align: center;
     padding: 15px 10px;
     /*word-spacing: 8px;*/
 }
+
 a {
     text-decoration: none;
     padding-bottom: 30px;
@@ -112,25 +113,26 @@ a {
     font-size: 20px;
 }
 
-/* Menu */
+/***************************Menu******************************/
 #menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 #menu li > a {
     background-color: pink;
     color: #545454;
     padding: 10px 10px;
     display: block;
     text-decoration: none;
-    /*margin-left: 20px;*/
     font-size: 14px;
     border-radius: 44px;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 100ms linear;
 }
+
 #menu > li > a:hover {
     background:lightgray;
 }
@@ -142,46 +144,156 @@ a {
     display: block;
 }
 
-/*SOBRE MI */
+/*************************SOBRE MI*****************************/
+.contenedor{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#sobremi{
+    width: 50%;
+}
+
+.quien-soy{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #545454;
+    letter-spacing: 3px;
+    text-shadow: 0 3px 3px 0 white;
+}
+
 .texto{
     text-align:justify;
     padding: 20px;
     font-family: 'Cormorant Garamond', serif;
     color: #545454;
-    font-size: 25px;
+    font-size: 24px;
 }
 
-.contenedor{
-    margin-top: 200px;
-    display: flex;
-    flex-direction: row;
+.contenedor-imagen{
+    width: 50%;
 }
-img{
+.presentacion-img{
     width: 550px;
     height: 500px;
-    padding-inline-end: 2em;
-    padding-bottom:1em;
-}
-h1{
-    text-align: center;
-    font-size:smaller;
-    color: #545454;
-    letter-spacing: 3px;
-    text-shadow: 0 3px white ;
+    margin-right: 0 auto;
+    box-shadow: 0 0 0 5px rgb(253, 206, 214), 
+                0 0 0 10px #ccc;
 }
 
-footer {
-    
-    background:pink;
-    /*padding: 100px 100px;*/
-    /*text-align: center;*/
-    font-family: 'Montserrat', 'sans serif';
+
+
+/*************************SECCION TRATAMIENTOS*************************/
+#tratamientos{
+    margin-top: 200px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+
 }
-.menu-footer a {
+
+
+.titulo-seccion{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #545454;
+}
+
+
+.descripcion-ttm{
+    
+    display: flex;
+    justify-content: center;
+
+    margin: 0 20px;
+    color: lightslategrey;
+}
+/*****************************************************************/
+/****************GALERIA DE IMAGENES*******************************/
+.galeria{
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen-galeria{
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*propiedad clave para que se vean sin pixeles*/
+    
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0077C0;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+    overflow: hidden;
+    background-color: pink;
+}
+
+.overlay h2{
+    text-align: center;
+    color: #545454;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+.imagen-galeria:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+
+}
+
+/***************************************************************/
+/*************************FOOTER********************************/
+footer{
+    width: 100%;
+    height: 300px;
+    background:pink;
+    margin-top: 70px;
+    text-align: center;
+    height: 200px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.menu-footer a{
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+
 
 .iconos-footer {
     padding: 20px;
@@ -221,30 +333,6 @@ footer {
         align-items: flex-start;
     }
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
