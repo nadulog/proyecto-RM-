@@ -195,47 +195,6 @@ a {
                 0 0 0 10px #ccc;
 }
 
-
-/*-------SECCION TRATAMIENTOS-------*/
-
-
-/*#tratamientos{
-    margin-top: 200px;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 2px 0px #545454;
-
-}
-
-
-.titulo-seccion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0 15px 0;
-    font-weight: 200;
-
-}
-
-.descripcion-ttm{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    color: rgb(248, 161, 176);
-}
-
-.desc-tto{
-    color: rgb(240, 133, 151);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 180px;
-}*/
-
 /*****************************************************************/
 /********************************GALERIA DE IMAGENES*******************************/
 .galeria{
@@ -267,6 +226,7 @@ a {
     height: 300px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+   
 }
 
 .imagen-galeria img{
@@ -281,7 +241,6 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
-    
     width: 100%;
     height: 0;
     transition: .3s ease;
@@ -308,8 +267,171 @@ a {
 
 }
 
+/*************************SECCION FORMULARIO***********************************/
+
+/****** inicio seccion contacto ******/
+.contacto {
+    padding-top: 100px; /* espacio del header fixed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.575);
+    width: 1000px; 
+    
+}
+
+.contenedor-columnas{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+
+.desc-ubicacion{
+    margin-left: 2px;
+    color: #545454;
+}
+
+.img-mapa{
+    width: 400px;
+    height: 300px;
+}
+
+/* Escribime */
+.columna-escribime {
+    width: 47%;
+    margin-left: 90px;
+  
+}
+
+.titulo-form{
+    color: #545454;
+
+}
 
 
+.formulario {
+    font-weight: bold;
+}
+
+.nombreapellido {
+    display: flex;
+    margin-bottom: 10px;
+  
+}
+
+
+.nombreform {
+    width: 46%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #545454;
+  
+}
+
+.apellidoform {
+    width:46%;
+    display: flex;
+    flex-direction: column;
+    color: #545454;
+}
+
+.emailform {
+    margin-bottom: 10px;
+    color: #545454;
+}
+
+.mensajeform {
+    display: flex;
+    flex-direction: column;
+    color: #545454;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+input[type='text'] {
+    color: #545454;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    border: #545454;
+    background-color: pink;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+input[type='email'] {
+    color: pink;
+    width: 98%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    background-color: pink;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+textarea {
+    color: #545454;
+    border-radius: 5px;
+    border: none;
+    background-color: pink;
+    padding: 10px;
+    resize: none;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+}
+
+input[type='submit'] {
+    border: none;
+    cursor: pointer;
+
+}
+
+input,
+textarea {
+   
+    outline: 0;
+}
+input:focus,
+textarea:focus {
+    
+    outline: 0;
+}
+
+.redes:hover {
+    background-color: pink;
+    border-radius: 30px;
+    padding: 15px 10px;
+    color: #545454;
+}
+
+.img-redes {
+    padding: 15px 10px;
+}
+
+
+.boton{
+    margin-top: 8px;
+    border-radius: 7px;
+    color: #545454; 
+}
 
 /***************************************************************/
 /**************************************FOOTER********************************/
